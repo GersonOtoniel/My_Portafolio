@@ -4,6 +4,7 @@ import ThemeToggleButton from './theme-toggle-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { forwardRef } from 'react'
 import { motion } from 'framer-motion'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({to, path, target, children, ...props}) => {
     const active = path === to
@@ -28,7 +29,7 @@ const MenuLink = forwardRef(({to, path, target,...props}, ref) => {
     const active = path === to
     const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
     return (
-        <Link ref = {ref} to={to} as={NavLink} target={target} fontWeight={active ? 'bold' : 'normal'} borderRadius="md"  {...props}/>
+        <Link ref = {ref} to={to} as={NavLink} target={target} fontWeight={active ? 'extrabold' : 'normal'} borderRadius="md"  {...props}/>
     )
 })
 
@@ -71,13 +72,25 @@ const Navbar = props => {
                     <LinkItem path={path} to="/about">
                         About me
                     </LinkItem>
+                    <LinkItem
+                        target="_blank"
+                        to="https://github.com/GersonOtoniel/My_Portafolio"
+                        path={path}
+                        display='inline-flex'
+                        alignItems="center"
+                        style={{ gap: 7 }}
+                        pl={3}
+                    >
+                        <IoLogoGithub/>
+                        Source
+                    </LinkItem>
                     
                 </Stack>
                 <Box flex={1} align={'right'}>
                     <ThemeToggleButton/>
 
                     <Box ml={2} display={{base: "inline-block", md: 'none'}}>
-                        <Menu>
+                        <Menu closeOnSelect={true} >
                             <MenuButton
                                 as={IconButton}
                                 icon={<HamburgerIcon/>}
@@ -90,6 +103,9 @@ const Navbar = props => {
                                 </MenuItem>
                                 <MenuItem as={MenuLink}  to="/about" path={path}>
                                     About me
+                                </MenuItem>
+                                <MenuItem as={MenuLink} to="https://github.com/GersonOtoniel/My_Portafolio" path={path} target="_blank">
+                                    Source
                                 </MenuItem>
                             </MenuList>
                         </Menu>
