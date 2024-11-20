@@ -25,6 +25,12 @@ const Home = () => {
                         <p>( Artist / Developer / Programmer)</p>
                     </Box>
                 </Box>
+                <Section delay={0.1}>
+                    <Paragraph>
+                        Hola soy Gerson, estudiante de la carrera de Ingeniera en Ciencias y Sistemas
+                        de la Universidad de San Carlos de Guatemala
+                    </Paragraph>
+                </Section>
             </Container>
         </Layout>
     )
