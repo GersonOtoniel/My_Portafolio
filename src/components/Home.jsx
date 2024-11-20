@@ -34,9 +34,9 @@ const Home = () => {
                     <Paragraph>
                         Gerson, nacido y criado en la ciudad de Guatemala 
                         estudiante de la carrera de Ingeniera en Ciencias 
-                        y Sistemas de la Universidad de San Carlos de 
-                        Guatemala, entusiata de la tecnolgía y apacionado por la música
-                        y las matemáticas, actualmente aprendiendo sobre el desarrollo web,
+                        y Sistemas de la Universidad de San Carlos, entusiasta 
+                        de la tecnología y apacionado por la música y las 
+                        matemáticas, actualmente aprendiendo sobre el desarrollo web,
                         aplicando mis conocimientos adquiridos durante mi transcurso en la carrera
                         y aplicandolos a mis proyectos.
                     </Paragraph>
@@ -45,7 +45,7 @@ const Home = () => {
                     <Heading as="h3" variant="section-title">
                         Bio
                     </Heading>
-                    
+
                 </Section>
             </Container>
         </Layout>
