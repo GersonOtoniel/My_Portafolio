@@ -1,5 +1,7 @@
 import { Box, Container, useColorModeValue } from "@chakra-ui/react";
 import Layout from "./Article";
+import Section from "./Section";
+import Paragraph from "./paragraph";
 
 function Text(){
     return (
@@ -15,6 +17,13 @@ function Text(){
                 >
 
                 </Box>
+
+                <Section delay={0.1}>
+                    <Paragraph>
+                        Hola soy Gerson, estudiante de la carrera de Ingeniera en Ciencias y Sistemas
+                        de la Universidad de San Carlos de Guatemala
+                    </Paragraph>
+                </Section>
             </Container>
         </Layout>
     )
