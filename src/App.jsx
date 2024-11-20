@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import Para from './components/Text';
 import Website from './components/website';
 import Home from './components/Home';
@@ -8,14 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
-      <Wrapper />
+       <Website Component={RoutesComponent} pageProps={{}} />
     </Router>
-  );
-};
-
-const Wrapper = () => {
-  return (
-    <Website Component={RoutesComponent} pageProps={{}} />
   );
 };
 

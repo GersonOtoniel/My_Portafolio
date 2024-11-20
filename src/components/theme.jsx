@@ -4,7 +4,8 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#f0e7db', '#202023')(props)
+      bg: mode('#f0e7db', '#202023')(props),
+      lineHeight: 'base',
     }
   })
 }
@@ -36,7 +37,11 @@ const fonts = {
 }
 
 const colors = {
-  grassTeal: '#88ccca'
+  grassTeal: '#88ccca',
+  brand: {
+    100: "#f7fafc",
+    900: "#1a202c",
+  },
 }
 
 const config = {
