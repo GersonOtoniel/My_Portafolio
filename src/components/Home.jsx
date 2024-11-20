@@ -1,6 +1,8 @@
 import { Box, Container, useColorModeValue, Heading } from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
 import Layout from "./Article";
+import Section from "./Section";
+import Paragraph from "./paragraph";
 
 const Home = () => {
     return (
