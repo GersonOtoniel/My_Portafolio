@@ -24,9 +24,11 @@ const LinkItem = ({to, path, target, children, ...props}) => {
     )
 }
 
-const MenuLink = forwardRef(({to, ...props}, ref) => {
+const MenuLink = forwardRef(({to, path, target,...props}, ref) => {
+    const active = path === to
+    const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
     return (
-        <Link ref = {ref} to={to} as={NavLink} {...props}/>
+        <Link ref = {ref} to={to} as={NavLink} target={target} fontWeight={active ? 'bold' : 'normal'} borderRadius="md"  {...props}/>
     )
 })
 
@@ -83,10 +85,10 @@ const Navbar = props => {
                                 aria-label='Options'
                             />
                             <MenuList>
-                                <MenuItem as={MenuLink} to="/">
+                                <MenuItem as={MenuLink} to="/" path={path}>
                                     Home
                                 </MenuItem>
-                                <MenuItem as={MenuLink}  to="/about">
+                                <MenuItem as={MenuLink}  to="/about" path={path}>
                                     About me
                                 </MenuItem>
                             </MenuList>
