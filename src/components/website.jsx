@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from './main';
-import Fonts from './fonts';
+import Fonts from './Fonts';
 import { AnimatePresence } from 'framer-motion';
 import Chakra from './chakra';
 import { useLocation } from 'react-router-dom';
