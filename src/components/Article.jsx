@@ -7,12 +7,13 @@ const variants = {
     exit: { opacity: 0, x: -0, y: 20 },
   }
 
-const Layout = ({children, title}) => {
+const Layout = ({children, title, key}) => {
     const t = `${title} - Gerson González`
 
     return(
         <HelmetProvider>
             <motion.article
+                key={key}
                 initial="hidden"
                 animate="enter"
                 exit="exit"

@@ -20,7 +20,7 @@ function Website({ Component, pageProps }) {
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
       
-      <Layout path={location.pathname}>
+      <Layout path={location.pathname} key={location.pathname}>
         <AnimatePresence
           mode="wait"
           initial={true}
