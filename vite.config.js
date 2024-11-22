@@ -5,8 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    minify: 'esbuild', // O 'terser' si prefieres una minificación más optimizada
-    // Para desactivar la minificación completamente
-    // minify: false,
+    minify: 'esbuild',
   },
 })
