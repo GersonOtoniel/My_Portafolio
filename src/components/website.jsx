@@ -4,7 +4,6 @@ import Fonts from './Fonts';
 import { AnimatePresence } from 'framer-motion';
 import Chakra from './chakra';
 import { useLocation } from 'react-router-dom';
-//import Payhip from './components/payhip';
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual';

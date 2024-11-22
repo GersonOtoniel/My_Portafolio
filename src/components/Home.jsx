@@ -6,8 +6,8 @@ import Paragraph from "./paragraph";
 
 const Home = () => {
     return (
-        <Layout>
-            <Container>
+        <Layout title={'Principal'}>
+            <Container maxW={'container.sm'}>
                 <Box
                     borderRadius="lg"
                     mb={6}
@@ -36,9 +36,9 @@ const Home = () => {
                         estudiante de la carrera de Ingeniera en Ciencias 
                         y Sistemas de la Universidad de San Carlos, entusiasta 
                         de la tecnología y apacionado por la música y las 
-                        matemáticas, actualmente aprendiendo sobre el desarrollo web,
-                        aplicando mis conocimientos adquiridos durante mi transcurso en la carrera
-                        y aplicandolos a mis proyectos.
+                        matemáticas, actualmente aplicando mis conocimientos 
+                        adquiridos durante mi transcurso en la carrera
+                        en proyectos personales y universitarios.
                     </Paragraph>
                 </Section>
                 <Section delay={0.2}>

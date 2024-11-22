@@ -3,7 +3,7 @@ import Layout from "./Article";
 import Section from "./Section";
 import Paragraph from "./paragraph";
 
-function Text(){
+function About(){
     return (
         <Layout>
             <Container>
@@ -29,4 +29,4 @@ function Text(){
     )
 }
 
-export default Text;
+export default About;

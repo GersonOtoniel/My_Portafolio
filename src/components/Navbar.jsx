@@ -64,13 +64,13 @@ const Navbar = props => {
                     mt={{ base: 4, md: 0 }}
                 >
                     <LinkItem path={path} to="/">
-                        Home
+                        Principal
+                    </LinkItem>
+                    <LinkItem path={path} to="/work">
+                        Proyectos
                     </LinkItem>
                     <LinkItem path={path} to="/about">
-                        Works
-                    </LinkItem>
-                    <LinkItem path={path} to="/about">
-                        About me
+                        Sobre mí
                     </LinkItem>
                     <LinkItem
                         target="_blank"
@@ -99,10 +99,13 @@ const Navbar = props => {
                             />
                             <MenuList>
                                 <MenuItem as={MenuLink} to="/" path={path}>
-                                    Home
+                                    Principal
                                 </MenuItem>
                                 <MenuItem as={MenuLink}  to="/about" path={path}>
-                                    About me
+                                    Sobre mí
+                                </MenuItem>
+                                <MenuItem as={MenuLink} to="/work" path={path}>
+                                    Proyectos 
                                 </MenuItem>
                                 <MenuItem as={MenuLink} to="https://github.com/GersonOtoniel/My_Portafolio" path={path} target="_blank">
                                     Source
