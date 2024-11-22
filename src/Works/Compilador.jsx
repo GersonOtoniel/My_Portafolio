@@ -5,7 +5,7 @@ import { Title } from "../Layouts/LayoutWork"
 const CompiladoresUno = () => {
     return (
         <Layout title={'Proyecto-Compiladores-1'}>
-            <Container>
+            <Container maxW={'container.sm'}>
                 <Title>
                     JavaCraft
                 </Title>

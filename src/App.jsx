@@ -17,9 +17,9 @@ const App = () => {
 const RoutesComponent = () => (
   <Routes>
     <Route path='/' element={<Home />} />
-    <Route path='/work' element={<Work/>}/>
+    <Route path='/work' element={<Work />}/>
     <Route path='/about' element={<Para />} />
-    <Route path='/Proyecto-Compiladores-1' element={<CompiladoresUno/>}/>
+    <Route path='/ProyectoCompiladores1' element={<CompiladoresUno />}/>
   </Routes>
 );
 

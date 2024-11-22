@@ -1,5 +1,5 @@
-import { Box, Heading, Image } from "@chakra-ui/react"
-import { Link, NavLink } from "react-router-dom"
+import { Box, Heading, Image, Link } from "@chakra-ui/react"
+import { NavLink } from "react-router-dom"
 import { useColorMode } from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 
@@ -7,14 +7,14 @@ import { ChevronRightIcon } from "@chakra-ui/icons"
 export const Title = ({children}) => {
     return(
         <Box>
-        <Link as={NavLink} to='/work'>
+        <Link as={NavLink} to='/work' >
             Proyectos
         </Link>
         <span>
             {' '}
             <ChevronRightIcon/>{' '}
         </span>
-        <Heading as="h3">
+        <Heading as="h3" display={'inline-block'} mb={4} fontSize={20}>
             {children}
         </Heading>
     </Box>
