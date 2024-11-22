@@ -16,7 +16,7 @@ const Layout = ({children, title}) => {
                 initial="hidden"
                 animate="enter"
                 exit="exit"
-                whileHover="hover"
+                //whileHover="hover"
                 variants={variants}
                 transition={{ duration: 0.4, type: 'easeInOut' }}
                 style={{ position: 'relative'}}
