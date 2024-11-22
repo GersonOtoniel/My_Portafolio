@@ -5,7 +5,7 @@ const main = ({children, path}) => {
     return (
         <Box  as="main" pb={8}>
             <Navbar path={path}/>
-            <Container maxW="container.lg" pt={28}>
+            <Container maxW="container.sm" pt={28}>
                 {children}
             </Container>
         </Box>
