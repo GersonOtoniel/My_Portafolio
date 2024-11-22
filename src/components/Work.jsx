@@ -7,7 +7,7 @@ import Compi1Image from "../images/Compiladores1.jpg"
 const Work = () => {
    return (
     <Layout title={'Proyectos'} >
-        <Container >
+        <Container maxW={'container.sm'}>
             <Heading mb={20} fontSize={28}>
                 Proyectos Realizados
             </Heading>
