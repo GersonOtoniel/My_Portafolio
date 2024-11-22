@@ -4,7 +4,7 @@ import Section from "./Section";
 import { GridProjects } from "../Works/Grid-item";
 import Compi1Image from "../images/Compiladores1.jpg"
 
-function Work(){
+const Work = () => {
    return (
     <Layout title={'Proyectos'} >
         <Container maxW={'container.sm'}>

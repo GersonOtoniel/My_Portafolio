@@ -3,7 +3,7 @@ import Layout from "./Article";
 import Section from "./Section";
 import Paragraph from "./paragraph";
 
-function About(){
+const About = () => {
     return (
         <Layout>
             <Container>
