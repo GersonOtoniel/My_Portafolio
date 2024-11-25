@@ -1,6 +1,6 @@
 import { Badge, Container, Heading, Link, List, ListItem } from "@chakra-ui/react"
 import Layout from "../components/Article"
-import { Title } from "../Layouts/LayoutWork"
+import { BadgeItem, Title } from "../Layouts/LayoutWork"
 import Paragraph from "../components/paragraph"
 
 const CompiladoresUno = () => {
@@ -21,18 +21,18 @@ const CompiladoresUno = () => {
                 <List ml={4} my={8}>
                     <ListItem>
                         <Heading as={"h3"} variant={'page-title'} fontSize={18}>Tecnologías</Heading>
-                        <Badge colorScheme="yellow" mr={4} mt={4} fontSize={14}>
+                        <BadgeItem color={'yellow'}>
                             Java
-                        </Badge>
-                        <Badge colorScheme="green" mr={4} mt={4} fontSize={14}>
+                        </BadgeItem>
+                        <BadgeItem color={'green'}>
                             Jflex
-                        </Badge>
-                        <Badge colorScheme="green" mr={4} mt={4} fontSize={14}>
+                        </BadgeItem>
+                        <BadgeItem color={'green'}>
                             CUP
-                        </Badge>
+                        </BadgeItem>
                     </ListItem>
                     <ListItem pt={8}>
-                        <Badge colorScheme="purple" mr={3} fontSize={14} >
+                        <Badge colorScheme="purple" mr={3} fontSize={14} borderRadius={'lg'}>
                             Respositorio: 
                         </Badge>
                         <Link href="https://github.com/GersonOtoniel/-OLC1_VJ24_202000774.git" target="_blank">

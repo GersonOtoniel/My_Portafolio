@@ -1,10 +1,15 @@
-import { Box, Container, useColorModeValue, Heading } from "@chakra-ui/react";
+import { Box, Container, useColorModeValue, Heading, List, ListItem, Divider } from "@chakra-ui/react";
+import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
 import Layout from "./Article";
 import Section from "./Section";
 import Paragraph from "./paragraph";
+import { IoLogoPython, IoLogoJavascript } from "react-icons/io5";
+import { BadgeItem } from "../Layouts/LayoutWork";
+import { FaGolang, FaJava, FaReact, FaHtml5 } from "react-icons/fa6";
 
 const Home = () => {
+    const progressColor = useColorModeValue('blue.800','blue.600')
     return (
         <Layout title={'Principal'}>
             <Container maxW={'container.sm'}>
@@ -41,11 +46,72 @@ const Home = () => {
                         en proyectos personales y universitarios.
                     </Paragraph>
                 </Section>
+                <Divider/>
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">
-                        Bio
+                        Teconologías
                     </Heading>
+                    <List ml={2} my={8}>
+                    <Divider orientation='vertical'/>
+                    <Heading as={'h3'} fontSize={'17'}>Lenguajes de Programación</Heading>
+                        <ListItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                            <BadgeItem color={'purple'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <IoLogoPython size={24}/>
+                                PYTHON
+                                <CircularProgress value={70} color={progressColor}>
+                                    <CircularProgressLabel>70%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                            <BadgeItem color={'blue'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <FaGolang size={28}/>
+                                GOLANG
+                                <CircularProgress value={50} color={progressColor}>
+                                    <CircularProgressLabel>50%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                            <BadgeItem color={'yellow'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <IoLogoJavascript size={24}/>
+                                JAVASCRIPT
+                                <CircularProgress value={25} color={progressColor}>
+                                    <CircularProgressLabel>25%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                        </ListItem>
+                        <ListItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                            <BadgeItem color={'orange'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <FaJava size={24}/>
+                                JAVA
+                                <CircularProgress value={55} color={progressColor}>
+                                    <CircularProgressLabel>55%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                        </ListItem>
 
+
+                        <Heading as={'h3'} fontSize={'17'} mt={10}>Frontend</Heading>
+                        <ListItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                            <BadgeItem color={'blue'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <FaReact size={24}/>
+                                REACT
+                                <CircularProgress value={25} color={progressColor}>
+                                    <CircularProgressLabel>25%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                            <BadgeItem color={'teal'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <FaHtml5 size={24}/>
+                                HTML
+                                <CircularProgress value={55} color={progressColor}>
+                                    <CircularProgressLabel>55%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                        </ListItem>
+                    </List>
                 </Section>
             </Container>
         </Layout>
