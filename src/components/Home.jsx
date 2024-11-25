@@ -1,4 +1,4 @@
-import { Box, Container, useColorModeValue, Heading, List, ListItem, Divider } from "@chakra-ui/react";
+import { Box, Container, useColorModeValue, Heading, List, ListItem, Divider, Wrap } from "@chakra-ui/react";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
 import Layout from "./Article";
@@ -51,10 +51,9 @@ const Home = () => {
                     <Heading as="h3" variant="section-title">
                         Teconologías
                     </Heading>
-                    <List ml={2} my={8}>
-                    <Divider orientation='vertical'/>
+                    <List ml={2} my={8} >
                     <Heading as={'h3'} fontSize={'17'}>Lenguajes de Programación</Heading>
-                        <ListItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                        <Wrap spacing="15px" justify="center">
                             <BadgeItem color={'purple'} display={'inline-flex'} 
                             p={1} alignItems={'center'} style={{gap:7}}>
                                 <IoLogoPython size={24}/>
@@ -79,8 +78,10 @@ const Home = () => {
                                     <CircularProgressLabel>25%</CircularProgressLabel>
                                 </CircularProgress>
                             </BadgeItem>
-                        </ListItem>
-                        <ListItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                        </Wrap>
+
+
+                        <Wrap display={'flex'} justifyContent={'center'} alignItems={'center'}>
                             <BadgeItem color={'orange'} display={'inline-flex'} 
                             p={1} alignItems={'center'} style={{gap:7}}>
                                 <FaJava size={24}/>
@@ -89,11 +90,11 @@ const Home = () => {
                                     <CircularProgressLabel>55%</CircularProgressLabel>
                                 </CircularProgress>
                             </BadgeItem>
-                        </ListItem>
+                        </Wrap>
 
 
                         <Heading as={'h3'} fontSize={'17'} mt={10}>Frontend</Heading>
-                        <ListItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                        <Wrap spacing="20px" justify="center">
                             <BadgeItem color={'blue'} display={'inline-flex'} 
                             p={1} alignItems={'center'} style={{gap:7}}>
                                 <FaReact size={24}/>
@@ -110,7 +111,7 @@ const Home = () => {
                                     <CircularProgressLabel>55%</CircularProgressLabel>
                                 </CircularProgress>
                             </BadgeItem>
-                        </ListItem>
+                        </Wrap>
                     </List>
                 </Section>
             </Container>
