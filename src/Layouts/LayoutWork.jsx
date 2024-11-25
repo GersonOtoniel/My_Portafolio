@@ -1,4 +1,4 @@
-import { Badge, Box, Heading, Image, Link } from "@chakra-ui/react"
+import { Badge, Box, Heading, Image, Link, Tooltip } from "@chakra-ui/react"
 import { NavLink } from "react-router-dom"
 import { useColorMode } from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
@@ -39,5 +39,15 @@ export const BadgeItem = ({children, color, ...props}) => {
         <Badge colorScheme={color} mr={4} mt={4} fontSize={14} borderRadius={'lg'} {...props}>
             {children}
         </Badge>
+    )
+}
+
+export const BadgeToolTip = ({children, color,tooltipLabel, ...props}) => {
+    return(
+        <Tooltip label={tooltipLabel} aria-label="Tooltip" hasArrow>
+            <Badge colorScheme={color} mr={4} mt={4} fontSize={14} borderRadius={'lg'} {...props}>
+                {children}
+            </Badge>
+        </Tooltip>
     )
 }

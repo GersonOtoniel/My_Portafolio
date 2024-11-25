@@ -1,12 +1,12 @@
-import { Box, Container, useColorModeValue, Heading, List, ListItem, Divider, Wrap } from "@chakra-ui/react";
+import { Box, Container, useColorModeValue, Heading, List, Divider, Wrap } from "@chakra-ui/react";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
 import Layout from "./Article";
 import Section from "./Section";
 import Paragraph from "./paragraph";
 import { IoLogoPython, IoLogoJavascript } from "react-icons/io5";
-import { BadgeItem } from "../Layouts/LayoutWork";
-import { FaGolang, FaJava, FaReact, FaHtml5 } from "react-icons/fa6";
+import { BadgeItem, BadgeToolTip } from "../Layouts/LayoutWork";
+import { FaGolang, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub } from "react-icons/fa6";
 
 const Home = () => {
     const progressColor = useColorModeValue('blue.800','blue.600')
@@ -49,7 +49,7 @@ const Home = () => {
                 <Divider/>
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">
-                        Teconologías
+                        Tecnologías
                     </Heading>
                     <List ml={2} my={8} >
                     <Heading as={'h3'} fontSize={'17'}>Lenguajes de Programación</Heading>
@@ -70,14 +70,14 @@ const Home = () => {
                                     <CircularProgressLabel>50%</CircularProgressLabel>
                                 </CircularProgress>
                             </BadgeItem>
-                            <BadgeItem color={'yellow'} display={'inline-flex'} 
-                            p={1} alignItems={'center'} style={{gap:7}}>
+                            <BadgeToolTip color={'yellow'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}} tooltipLabel={"Aprendizaje en curso"}>
                                 <IoLogoJavascript size={24}/>
                                 JAVASCRIPT
                                 <CircularProgress value={25} color={progressColor}>
                                     <CircularProgressLabel>25%</CircularProgressLabel>
                                 </CircularProgress>
-                            </BadgeItem>
+                            </BadgeToolTip>
                         </Wrap>
 
 
@@ -109,6 +109,26 @@ const Home = () => {
                                 HTML
                                 <CircularProgress value={55} color={progressColor}>
                                     <CircularProgressLabel>55%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                        </Wrap>
+
+                        <Heading as={'h3'} fontSize={'17'} mt={10}>Herramientas</Heading>
+                        <Wrap spacing="20px" justify="center">
+                        <BadgeItem color={'orange'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <FaGitAlt size={24}/>
+                                GIT
+                                <CircularProgress value={35} color={progressColor}>
+                                    <CircularProgressLabel>35%</CircularProgressLabel>
+                                </CircularProgress>
+                            </BadgeItem>
+                            <BadgeItem color={'blue'} display={'inline-flex'} 
+                            p={1} alignItems={'center'} style={{gap:7}}>
+                                <FaGithub size={24}/>
+                                GITHUB
+                                <CircularProgress value={45} color={progressColor}>
+                                    <CircularProgressLabel>45%</CircularProgressLabel>
                                 </CircularProgress>
                             </BadgeItem>
                         </Wrap>
