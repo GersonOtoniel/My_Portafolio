@@ -13,7 +13,7 @@ export const Education = () => {
         index: 0,
         count: steps.length,
       })
-
+      
     return(
         <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
@@ -27,7 +27,7 @@ export const Education = () => {
                     />
                 </StepIndicator>
 
-                <Box flexShrink='0'>
+                <Box flexShrink='0' maxW={"100%"}>
                     <StepTitle>{step.title}</StepTitle>
                     <StepDescription
                     fontSize={{ base: "sm", md: "md" }} 
@@ -35,7 +35,6 @@ export const Education = () => {
                     whiteSpace="normal" 
                     wordBreak="break-word" 
                     overflowWrap="break-word"
-                    
                     >{step.description}</StepDescription>
                 </Box>
 
