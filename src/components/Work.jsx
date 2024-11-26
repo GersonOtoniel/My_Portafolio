@@ -3,6 +3,7 @@ import Layout from "./Article";
 import Section from "./Section";
 import { GridProjects } from "../Works/Grid-item";
 import Compi1Image from "../images/Compiladores1.jpg"
+import Grafo1 from "../images/Grafos/Grafo1.jpg"
 
 const Work = () => {
    return (
@@ -17,6 +18,14 @@ const Work = () => {
                     Consiste en crear un lenguaje de
                     programación para poder utilizar en los proyectos de los cursos de
                     Introducción a la Programación y Computación 1 y 2.
+                    </GridProjects>
+                </Section>
+                <Section>
+                    <GridProjects title={'Grafos'} source={Grafo1} to={'/ProyectoGrafos'}>
+                        Consiste en crear una interfaz con la que se pueda crear Grafos
+                        dirigidos y asi poder calcular un camino dado un nodo inicial
+                        y uno final, sumado a ello se calcula tambien el camino mas 
+                        corto entre ambos vertices.
                     </GridProjects>
                 </Section>
             </SimpleGrid>

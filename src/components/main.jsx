@@ -1,5 +1,6 @@
 import { Box, Container } from "@chakra-ui/react"
 import Navbar from "./Navbar"
+import { Footer } from "./Footer"
 
 const main = ({children, path}) => {
     return (
@@ -7,6 +8,7 @@ const main = ({children, path}) => {
             <Navbar path={path}/>
             <Container maxW="container.sm" pt={28}>
                 {children}
+                <Footer/>
             </Container>
         </Box>
     )

@@ -34,6 +34,10 @@ export const Images = ({src, alt}) => {
     )
 }
 
+export const WorkImage = ({ src, alt }) => (
+    <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+  )
+
 export const BadgeItem = ({children, color, ...props}) => {
     return(
         <Badge colorScheme={color} mr={4} mt={4} fontSize={14} borderRadius={'lg'} {...props}>
@@ -44,7 +48,7 @@ export const BadgeItem = ({children, color, ...props}) => {
 
 export const BadgeToolTip = ({children, color,tooltipLabel, ...props}) => {
     return(
-        <Tooltip label={tooltipLabel} aria-label="Tooltip" hasArrow>
+        <Tooltip label={tooltipLabel} aria-label='A tooltip' shouldWrapChildren hasArrow>
             <Badge colorScheme={color} mr={4} mt={4} fontSize={14} borderRadius={'lg'} {...props}>
                 {children}
             </Badge>

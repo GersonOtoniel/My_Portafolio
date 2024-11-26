@@ -2,6 +2,7 @@ import { Badge, Container, Heading, Link, List, ListItem } from "@chakra-ui/reac
 import Layout from "../components/Article"
 import { BadgeItem, Title } from "../Layouts/LayoutWork"
 import Paragraph from "../components/paragraph"
+import { ExternalLinkIcon } from "@chakra-ui/icons"
 
 const CompiladoresUno = () => {
     return (
@@ -36,7 +37,8 @@ const CompiladoresUno = () => {
                             Respositorio: 
                         </Badge>
                         <Link href="https://github.com/GersonOtoniel/-OLC1_VJ24_202000774.git" target="_blank">
-                            https://github.com/GersonOtoniel/-OLC1_VJ24_202000774.git
+                            Link del Respositorio
+                            <ExternalLinkIcon mx={'2px'}/>
                         </Link>
                     </ListItem>
                 </List>
