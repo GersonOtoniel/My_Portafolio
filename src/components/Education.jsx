@@ -27,14 +27,10 @@ export const Education = () => {
                     />
                 </StepIndicator>
 
-                <Box flexShrink='0' maxW={"100%"}>
+                <Box maxW={"100%"}>
                     <StepTitle>{step.title}</StepTitle>
                     <StepDescription
-                    fontSize={{ base: "sm", md: "md" }} 
-                    textAlign="justify" 
-                    whiteSpace="normal" 
-                    wordBreak="break-word" 
-                    overflowWrap="break-word"
+                    
                     >{step.description}</StepDescription>
                 </Box>
 
