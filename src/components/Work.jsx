@@ -4,12 +4,14 @@ import Section from "./Section";
 import { GridProjects } from "../Works/Grid-item";
 import Compi1Image from "../images/Compiladores1.jpg"
 import Grafo1 from "../images/Grafos/Grafo1.jpg"
+import { IoCodeSlash } from "react-icons/io5";
 
 const Work = () => {
    return (
     <Layout title={'Proyectos'} >
         <Container maxW={'container.sm'}>
-            <Heading mb={20} fontSize={28}>
+            <Heading mb={20} fontSize={28} display={'inline-flex'} style={{gap:17}}>
+                <IoCodeSlash size={40}/>
                 Proyectos Realizados
             </Heading>
             <SimpleGrid columns={[1,1,2]} gap={6}>
@@ -22,7 +24,7 @@ const Work = () => {
                 </Section>
                 <Section>
                     <GridProjects title={'Grafos'} source={Grafo1} to={'/ProyectoGrafos'}>
-                        Consiste en crear una interfaz con la que se pueda crear Grafos
+                        Consiste en una interfaz con la que se pueda crear Grafos
                         dirigidos y asi poder calcular un camino dado un nodo inicial
                         y uno final, sumado a ello se calcula tambien el camino mas 
                         corto entre ambos vertices.

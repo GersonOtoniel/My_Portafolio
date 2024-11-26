@@ -1,11 +1,11 @@
-import { Container, List, ListItem, Heading, Badge, Link } from "@chakra-ui/react"
+import { Container, List, ListItem, Heading, Badge, Link, Button } from "@chakra-ui/react"
 import Layout from "../components/Article"
 import ImageGrafo2 from "../images/Grafos/Grafo2.jpg"
 import ImageGrafo3 from "../images/Grafos/Grafo3.jpg"
 import { Title, WorkImage } from "../Layouts/LayoutWork"
 import Paragraph from "../components/paragraph"
 import { BadgeItem } from "../Layouts/LayoutWork"
-import { ExternalLinkIcon } from "@chakra-ui/icons"
+import { IoLogoGithub } from "react-icons/io5"
 
 export const GrafosProyecto = () => {
     return(
@@ -43,8 +43,7 @@ export const GrafosProyecto = () => {
                             Respositorio: 
                         </Badge>
                         <Link href="https://github.com/GersonOtoniel/-MC2-Proyecto_202000774.git" target="_blank">
-                            Link del Respositorio
-                            <ExternalLinkIcon mx={'2px'}/>
+                            <Button as={'a'} leftIcon={<IoLogoGithub/>} rel="noopener noreferrer" borderRadius={24}>Código</Button>     
                         </Link>
                     </ListItem>
                 </List>
