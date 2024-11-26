@@ -1,6 +1,6 @@
 import { Stepper, Step, StepIndicator, StepStatus, 
     Box, StepTitle, StepIcon, StepNumber, StepDescription,
-    StepSeparator, useSteps, Heading } from "@chakra-ui/react"
+    StepSeparator, useSteps, Heading, useBreakpointValue } from "@chakra-ui/react"
 import Section from "./Section"
 
 const steps = [
@@ -13,6 +13,7 @@ export const Education = () => {
         index: 0,
         count: steps.length,
       })
+
     return(
         <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
@@ -28,7 +29,14 @@ export const Education = () => {
 
                 <Box flexShrink='0'>
                     <StepTitle>{step.title}</StepTitle>
-                    <StepDescription>{step.description}</StepDescription>
+                    <StepDescription
+                    fontSize={{ base: "sm", md: "md" }} 
+                    textAlign="justify" 
+                    whiteSpace="normal" 
+                    wordBreak="break-word" 
+                    overflowWrap="break-word"
+                    
+                    >{step.description}</StepDescription>
                 </Box>
 
                 <StepSeparator />
