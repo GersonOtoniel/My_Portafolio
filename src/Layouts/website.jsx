@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Layout from './main';
-import Fonts from './Fonts';
+import Layout from '../components/main';
+import Fonts from '../components/Fonts';
 import { AnimatePresence } from 'framer-motion';
-import Chakra from './chakra';
+import Chakra from '../components/chakra';
 import { useLocation } from 'react-router-dom';
 
 if (typeof window !== 'undefined') {

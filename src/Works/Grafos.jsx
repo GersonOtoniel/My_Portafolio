@@ -1,5 +1,5 @@
 import { Container, List, ListItem, Heading, Badge, Link, Button } from "@chakra-ui/react"
-import Layout from "../components/Article"
+import Layout from "../Layouts/Article"
 import ImageGrafo2 from "../images/Grafos/Grafo2.jpg"
 import ImageGrafo3 from "../images/Grafos/Grafo3.jpg"
 import { Title, WorkImage } from "../Layouts/LayoutWork"

@@ -1,5 +1,5 @@
 import { Box, Container, useColorModeValue } from "@chakra-ui/react";
-import Layout from "./Article";
+import Layout from "../Layouts/Article";
 import Section from "./Section";
 import Paragraph from "./paragraph";
 

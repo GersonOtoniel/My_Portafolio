@@ -1,6 +1,6 @@
 import { Box, Container, useColorModeValue, Heading,Divider } from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
-import Layout from "./Article";
+import Layout from "../Layouts/Article";
 import Section from "./Section";
 import Paragraph from "./paragraph";
 import { Tecnologies } from "./Technologies";

@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Provider from './components/Provider.jsx'
+import Provider from './Layouts/Provider.jsx'
 import App from './App.jsx'
 
 

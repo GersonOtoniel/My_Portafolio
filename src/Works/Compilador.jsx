@@ -1,5 +1,5 @@
 import { Badge, Button, Container, Heading, Link, List, ListItem } from "@chakra-ui/react"
-import Layout from "../components/Article"
+import Layout from "../Layouts/Article"
 import { BadgeItem, Title } from "../Layouts/LayoutWork"
 import Paragraph from "../components/paragraph"
 import { ExternalLinkIcon } from "@chakra-ui/icons"

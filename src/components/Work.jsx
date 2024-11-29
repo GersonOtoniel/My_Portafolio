@@ -1,9 +1,10 @@
 import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
-import Layout from "./Article";
+import Layout from "../Layouts/Article";
 import Section from "./Section";
 import { GridProjects } from "../Works/Grid-item";
 import Compi1Image from "../images/Compiladores1.jpg"
 import Grafo1 from "../images/Grafos/Grafo1.jpg"
+import lfp_p2 from "../images/LFP_P2/interfaz.jpg"
 import { IoCodeSlash } from "react-icons/io5";
 
 const Work = () => {
@@ -28,6 +29,11 @@ const Work = () => {
                         dirigidos y asi poder calcular un camino dado un nodo inicial
                         y uno final, sumado a ello se calcula tambien el camino mas 
                         corto entre ambos vertices.
+                    </GridProjects>
+                </Section>
+                <Section>
+                    <GridProjects title={'Traductor'} source={lfp_p2} to={'/ProyectoLFP'}>
+                        Consiste en un compilador que traduce un lenguaje especificado y lo transforma en Sentencias de Bases de Datos No Relacionales.  
                     </GridProjects>
                 </Section>
             </SimpleGrid>
